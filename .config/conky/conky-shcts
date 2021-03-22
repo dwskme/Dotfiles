@@ -64,32 +64,31 @@ conky.config = {
 
 conky.text = [[
 ${font Play:size=10:style=normal}
-${color2}open terminal - ${alignr}${color}super+enter
-${color2}open browser - ${alignr}${color}super+F1
-${color2}open mail - ${alignr}${color}super+F2
-${color2}open filemanager - ${alignr}${color}super+F3
-${color2}open text - ${alignr}${color}super+F4
+${color2}open terminal - ${alignr}${color}mod+enter
+${color2}open browser - ${alignr}${color}mod+F1
+${color2}open mail - ${alignr}${color}mod+F2
+${color2}open filemanager - ${alignr}${color}mod+F3
+${color2}open text - ${alignr}${color}mod+F4
 
 #rofi
-${color2}application launcher ... - ${alignr}${color}super+d
+${color2}application launcher ... - ${alignr}${color}mod+d
 ${color2}screenshot - ${alignr}${color}print
 
-${color2}resize window - ${alignr}${color}super+r
-${color2}kill focused - ${alignr}${color}super+c | super+q
-${color2}toggle split direction - ${alignr}${color}super+shift+q
-${color2}toggle floating - ${alignr}${color}super+space
-${color2}toggle fullscreen - ${alignr}${color}super+f
+${color2}resize window - ${alignr}${color}mod+r
+${color2}kill focused - ${alignr}${color}mod+c | Alt+F4
+${color2}toggle split direction - ${alignr}${color}mod+shift+q
+${color2}toggle floating - ${alignr}${color}mod+space
+${color2}toggle fullscreen - ${alignr}${color}mod+f
 # switch to workspace
-${color2}switch to workspace 1-8 - ${alignr}${color}super+1-8
+${color2}switch to workspace 1-8 - ${alignr}${color}mod+1-9
 # move focused container to workspace
-${color2}send to workspace 1-8 - ${alignr}${color}super+shift+1-8
+${color2}send to workspace 1-8 - ${alignr}${color}mod+shift+1-9
 # Move to workspace with focused container
-${color2}move to workspace 1-8 - ${alignr}${color}alt+shift+1-8
-${color2}navigate workspaces - ${alignr}${color}super+ctrl+arrowkeys
-${color2}navigate windows - ${alignr}${color}super+shift+arrowkeys
-${color2}change focus - ${alignr}${color}super+arrowkeys
-${color2}restart i3 inplace - ${alignr}${color}super+shift+r
-${color2}reload config file - ${alignr}${color}super+shift+c
-${color2}logout, reboot, shutdown ... - ${alignr}${color}super+0
+${color2}move to workspace 1-8 - ${alignr}${color}alt+shift+1-9
+${color2}navigate workspaces - ${alignr}${color}mod+ctrl+arrowkeys
+${color2}navigate windows - ${alignr}${color}mod+shift+arrowkeys
+${color2}change focus - ${alignr}${color}mod+arrowkeys
+${color2}restart i3 inplace - ${alignr}${color}mod+shift+r
+${color2}reload config file - ${alignr}${color}mod+shift+c
+${color2}logout, reboot, shutdown ... - ${alignr}${color}mod+0
 ]];
-

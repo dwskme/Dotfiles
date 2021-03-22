@@ -1,13 +1,9 @@
 # set modifier
 set $mod Mod4
 set $alt Mod1
-set $mod Mod4
-
-
 
 # set font
 font pango: Noto Sans 12
-
 
 ################################
 ### Commonly Used Variables: ###
@@ -51,7 +47,9 @@ floating_modifier $mod
 exec --no-startup-id xsettingsd &
 exec --no-startup-id conky
 exec --no-startup-id conky -c ~/.config/conky/conky-shcts
+# copyq is clipboard manager
 exec --no-startup-id copyq
+# dunst is a notification manager 
 exec --no-startup-id dunst
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id feh --bg-scale /home/dwsk/wallpaper.jpg
@@ -77,7 +75,6 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
 
-
 # music control
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
@@ -85,7 +82,7 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+c kill
 bindsym $alt+F4 kill
 
 # change focus
