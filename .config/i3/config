@@ -21,7 +21,7 @@ set $preferredFileManager /usr/bin/thunar
 set $preferredMailClient /usr/bin/geary
 set $preferredTextEditor /usr/bin/geany
 set $preferredScreenCaptureTool /usr/bin/flameshot gui
-
+set $preferredMusicPlayer /usr/bin/Spotify
 
 ###########################################
 ### Commonly Used Application Keybinds: ###
@@ -31,6 +31,7 @@ bindsym $super+F1 exec $preferredBrowser;focus
 bindsym $super+F2 exec $preferredMailClient;focus
 bindsym $super+F3 exec $preferredFileManager;focus
 bindsym $super+F4 exec $preferredTextEditor;focus
+bindsym $super+F5 exec $preferredMusicPlayer;focus
 
 ### Start a Terminal Emulator: ###
 # - You can change the preferredTerminalEmulator variable
@@ -60,7 +61,7 @@ bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:si
 bindsym $super+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 8'
 
 # Lock screen
-bindsym $super+l exec i3lock -i $lockScreenWallpaper
+bindsym $super+x exec i3lock -i $lockScreenWallpaper
 
 # Print screen
 bindsym $super+Print --release exec --no-startup-id i3-scrot -w
@@ -227,4 +228,3 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
