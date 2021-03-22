@@ -1,4 +1,4 @@
-# set modifier
+# modifier
 set $mod Mod4
 set $alt Mod1
 
@@ -40,8 +40,6 @@ bindsym $mod+Return exec $preferredTerminalEmulator
 bindsym $mod+t exec xfce4-terminal
 
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
 
 #autostart
 exec --no-startup-id xsettingsd &
@@ -52,7 +50,7 @@ exec --no-startup-id dunst
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id feh --bg-scale /home/dwsk/wallpaper.jpg
 exec --no-startup-id spotify
-#exec_always --no-startup-id compton -o 0.3 --backend glx --vsync opengl -b -i 1.0 --config ~/.config/compton.conf
+# exec_always --no-startup-id compton -o 0.3 --backend glx --vsync opengl -b -i 1.0 --config ~/.config/compton.conf
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -240,7 +238,7 @@ client.background           #2f343f
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 #client.background       #ffffff
 
-# Set shut down, restart and locking features
+#  shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
