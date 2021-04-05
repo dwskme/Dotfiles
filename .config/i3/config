@@ -10,7 +10,7 @@ font pango: Noto Sans 12
 ################################
 
 ### Wallpaper: ###
-# - You need to specify homescreen wallpaper using nitrogen
+
 set $lockScreenWallpaper /usr/share/wallpapers/custom/.lockscreenwallpaper.png
 
 ### Applications: ###
